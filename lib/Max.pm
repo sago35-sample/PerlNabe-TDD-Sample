@@ -1,13 +1,7 @@
 package Max;
 
 sub max {
-    my $max = shift @_;
-    foreach my $value (@_) {
-        if ($max < $value) {
-            $max = $value;
-        }
-    }
-    return $max;
+    return (sort {$a <=> $b} @_)[-1];
 }
 
 1;
