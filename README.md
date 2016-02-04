@@ -10,18 +10,20 @@ max()の引数を3個以上でもOKとする
 max()の引数が1つだった場合でもOKとする
 例えば、max(1,2,3) → 3、max(5) → 5 という感じ
 
+---
+
+# 作るもの(さらに次)
+引数が無ければ、"error"という文字列を返す
+
+
 
 ---
 
 # その他メモ
-テストのファイルは、t/*.tという名前で作成する
-ライブラリは、lib/以下に**.pmという名前で作成する
-  → Max.pm というようなCamelケースで書く
-
-lib/Max.pm だったら、package Max; と書く
-lib/Sample/Min.pm だったら、package Sample::Min;
-
-
-use Max; で、作成したモジュールをuseする
-
-$ perl -Ilib t\max.t というように、-I(アイ)libを追加してperl実行する
+- テストのファイルは、t/*.tという名前で作成する
+- ライブラリは、lib/以下に**.pmという名前で作成する
+ - → Max.pm というようなCamelケースで書く
+- lib/Max.pm だったら、package Max; と書く
+- lib/Sample/Min.pm だったら、package Sample::Min;
+- use Max; で、作成したモジュールをuseする
+- $ perl -Ilib t\max.t というように、-I(アイ)libを追加してperl実行する
