@@ -9,6 +9,8 @@ is Max::max(-2,-4), -2;
 is Max::max(1,2,3), 3;
 is Max::max(5), 5;
 
+is Max::max(-1), -1;
+
 
 
 done_testing;
