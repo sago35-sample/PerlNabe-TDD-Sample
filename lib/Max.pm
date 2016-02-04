@@ -1,7 +1,11 @@
 package Max;
 
 sub max {
-    return (sort {$a <=> $b} @_)[-1];
+    if (scalar @_ > 0) {
+        return (sort {$a <=> $b} @_)[-1];
+    } else {
+        return "error";
+    }
 }
 
 1;
