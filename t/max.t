@@ -13,5 +13,9 @@ is Max::max(-1), -1;
 
 is Max::max(), "error";
 
+is Max::max(1,1), 1;
+is Max::max(1,2,2,1), 2;
+is Max::max(-1,-1,-1), -1;
+
 
 done_testing;
